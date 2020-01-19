@@ -1,0 +1,38 @@
+name: nixie_clock
+description: A nixie tube clock app.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_clock_helper:
+    path: ../flutter_clock_helper
+  flutter_svg: ^0.15.0
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - images/nixie-mesh.png
+    - images/nixie-mesh-small.png
+    - images/nixie-tube-base.png
+  fonts:
+    - family: NixieOne
+      fonts:
+        - asset: third_party/NixieOne-Regular.ttf
+    - family: Comfortaa
+      fonts:
+        - asset: third_party/Comfortaa-Regular.ttf
+        - asset: third_party/Comfortaa-Bold.ttf
+          weight: 900
